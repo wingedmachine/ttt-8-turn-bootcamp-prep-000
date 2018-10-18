@@ -13,7 +13,7 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  index >= 0 && index <= 8 && board[index] == " " && board[index] == "" && board[index] == nil
+  index >= 0 && index <= 8 && (board[index] == " " || board[index] == "" || board[index] == nil)
 end
 
 def move(board, index, char = "X")
