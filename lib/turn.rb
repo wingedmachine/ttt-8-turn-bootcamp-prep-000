@@ -11,3 +11,7 @@ end
 def input_to_index(user_input)
   user_input.strip.to_i - 1
 end
+
+def valid_move?(board, index)
+  index >= 0 && index <= 8 && board[index] == " "
+end
